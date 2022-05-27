@@ -35,16 +35,39 @@
 
 header {
   background-color: #d9a918;
-  height: 110px;
+  border-bottom: 2px solid #bf2121;
+  height: 85px;
 }
 header img {
-  height: 110px;
-  padding: 10px;
+  height: 85px;
+}
+header .inner-content {
+  display: flex;
+  justify-content: space-between;
+  height: 83px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav a {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 83px;
+  text-decoration: none;
+  transition: 0.2s;
+  color: black;
+  margin: 0 5px;
+}
+header nav a:focus,
+header nav a:hover {
+  background-color: #d9b91a;
 }
 
 footer {
   background-color: #214da6;
   padding: 20px 0;
+  color: white;
 }
 footer a {
   color: white;
