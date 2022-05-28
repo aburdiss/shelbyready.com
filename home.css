@@ -1,0 +1,141 @@
+.notice-banner {
+  background-color: #bf2121;
+  color: white;
+  padding: 10px 0;
+}
+.notice-banner .inner-content {
+  text-align: center;
+}
+.notice-banner img {
+  height: 1em;
+  vertical-align: middle;
+  padding-bottom: 3px;
+}
+
+/* Banner */
+
+.banner::before {
+  background: linear-gradient(to bottom, #d9a918, transparent);
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 85px;
+  width: 100%;
+  height: 400px;
+  z-index: -1;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+@media screen and (min-width: 800px) {
+  .banner {
+    flex-direction: row;
+  }
+}
+.banner .left {
+  margin: 40px 0;
+}
+.banner .left > * {
+  margin: 20px 0 0 0;
+}
+.banner .right {
+  margin: 20px;
+}
+@media screen and (min-width: 800px) {
+  .banner .right,
+  .banner .left {
+    width: 50%;
+  }
+}
+.banner .right img {
+  max-width: min(300px, 100%);
+  margin: auto;
+  display: block;
+}
+
+/* Cards */
+.cards {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 12px;
+}
+.card {
+  background-color: white;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.22);
+  padding: 40px 40px 90px 40px;
+  margin: 20px;
+  position: relative;
+  border-top: 10px solid #214da6;
+}
+@media screen and (min-width: 800px) {
+  .card {
+    width: calc(50% - 40px);
+  }
+}
+.card h2 {
+  margin-top: 0;
+}
+.card-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #bf2121;
+  text-decoration: none;
+  color: #bf2121;
+  transition: all 0.2s;
+  display: inline-block;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+.card-button:focus,
+.card-button:hover {
+  background-color: #bf2121;
+  color: white;
+}
+
+.contact form {
+  background-color: #d9a918;
+  padding: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.contact form .right {
+  margin-top: 50px;
+}
+@media screen and (min-width: 800px) {
+  .contact form {
+    flex-direction: row;
+  }
+  .contact form .left {
+    width: 50%;
+    padding-right: 40px;
+  }
+  .contact form .right {
+    padding-left: 40px;
+    margin-top: 0;
+    width: 50%;
+    border-left: 2px solid #bf2121;
+  }
+}
+.contact form h2 {
+  margin: 0;
+}
+.contact form label {
+  display: block;
+  margin-bottom: 10px;
+}
+.contact form label span {
+  display: block;
+}
+.contact form input,
+.contact form textarea {
+  width: 100%;
+}
+.contact form textarea {
+  resize: vertical;
+}

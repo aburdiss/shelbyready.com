@@ -1,6 +1,14 @@
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  color: #214da6;
+  font-style: italic;
+  font-weight: normal;
 }
 
 .visually-hidden-accessibility {
@@ -33,9 +41,23 @@
   padding-right: 2rem;
 }
 
+.button {
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  background-color: #bf2121;
+  color: white;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background-color: #d72525;
+}
+
 header {
   background-color: #d9a918;
-  border-bottom: 2px solid #bf2121;
   height: 85px;
 }
 header img {
@@ -44,7 +66,7 @@ header img {
 header .inner-content {
   display: flex;
   justify-content: space-between;
-  height: 83px;
+  height: 85px;
 }
 header nav {
   display: flex;
@@ -53,7 +75,7 @@ header nav {
 header nav a {
   display: inline-block;
   padding: 0 10px;
-  line-height: 83px;
+  line-height: 85px;
   text-decoration: none;
   transition: 0.2s;
   color: black;

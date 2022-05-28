@@ -1,0 +1,27 @@
+.body-container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 800px) {
+  .body-container {
+    flex-direction: row;
+  }
+  .body-container main {
+    margin: 40px;
+  }
+}
+.body-container aside {
+  width: 250px;
+  padding: 20px;
+  background-color: #d9a918;
+}
+.body-container aside nav a {
+  display: block;
+  padding: 5px;
+}
+.body-container main {
+  width: 100%;
+}
+.body-container main h1 {
+  margin: 0;
+}

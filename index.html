@@ -13,6 +13,7 @@
     <meta name="msapplication-TileColor" content="#d9a918" />
     <meta name="theme-color" content="#d9a918" />
     <link href="/global.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/home.css" />
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -21,26 +22,96 @@
         <a href="/"><img src="/assets/Logo.svg" alt="Shelby ready" /></a>
         <nav>
           <a href="/">Home</a>
+          <a href="/get-involved/">Get Involved</a>
           <a href="/resources">Resources</a>
+          <a href="/about">About</a>
         </nav>
       </div>
     </header>
-    <main id="main-content">
+    <div class="notice-banner">
       <div class="inner-content">
-        <h1>Shelby Ready</h1>
-        <p>
-          Shelby Ready is a local organization that promotes community, and
-          disaster preparedness in Shelby County, Ohio.
-        </p>
-        <p>
-          To learn more about this organization, email
-          <a href="mailto:info@shelbyready.com">info@shelbyready.com</a>.
-        </p>
-        <p>
-          This site is still under construction. If you see any issues, please
-          be patient and check back later, as they may be fixed.
-        </p>
+        <img src="/assets/warning.svg" alt="Notice" />
+        This site is still under construction. Some site features may not work
+        as intended.
       </div>
+    </div>
+    <main id="main-content">
+      <section class="banner inner-content">
+        <div class="left">
+          <h1>Are you prepared?</h1>
+          <p>
+            Shelby Ready is a local organization that promotes community, and
+            disaster preparedness in Shelby County, Ohio.
+          </p>
+          <a class="button" href="mailto:info@shelbyready.com">Get Involved</a>
+        </div>
+        <div class="right">
+          <img src="/assets/civil_defence.svg" alt="Civil Defence" />
+        </div>
+      </section>
+      <section class="cards inner-content">
+        <div class="card">
+          <h2>What?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a class="card-button" href="#">Learn More</a>
+        </div>
+        <div class="card">
+          <h2>Who?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <a class="card-button" href="#">Learn More</a>
+        </div>
+        <div class="card">
+          <h2>Why?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <a class="card-button" href="#">Learn More</a>
+        </div>
+        <div class="card">
+          <h2>How Can I Help?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a class="card-button" href="#">Learn More</a>
+        </div>
+      </section>
+      <section class="contact inner-content">
+        <form action="https://formspree.io/f/mayvvpwp" method="POST">
+          <div class="left">
+            <h2>Contact Shelby Ready</h2>
+            <label>
+              <span> Name </span>
+              <input type="text" name="Name" />
+            </label>
+            <label>
+              <span> Email </span>
+              <input type="email" name="email" />
+            </label>
+            <label>
+              <span> Message </span>
+              <textarea name="message" rows="4"></textarea>
+            </label>
+            <button class="button" type="submit">Send</button>
+          </div>
+          <div class="right">
+            Contact us for more information on how to get involved, inquiries
+            about specific preparedness topics, and any other quesion you may
+            have.
+          </div>
+        </form>
+      </section>
     </main>
     <footer>
       <div class="inner-content">
