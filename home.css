@@ -42,6 +42,7 @@
 }
 .banner .right {
   margin: 20px;
+  display: flex;
 }
 @media screen and (min-width: 800px) {
   .banner .right,
@@ -120,6 +121,8 @@
     margin-top: 0;
     width: 50%;
     border-left: 2px solid #bf2121;
+    display: flex;
+    align-items: center;
   }
 }
 .contact form h2 {

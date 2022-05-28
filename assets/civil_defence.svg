@@ -7,13 +7,13 @@
   width="600"
   height="600"
 >
-  <circle cx="300" cy="300" r="300" style="fill: #003080; fill-opacity: 1" />
+  <circle cx="300" cy="300" r="300" style="fill: #214da6; fill-opacity: 1" />
   <path d="M64,434 H536 L300,33 z" style="fill: #ffffff" />
   <circle
     cx="300"
     cy="300"
     r="108"
-    style="fill: none; stroke: #ce1126; stroke-width: 40; stroke-opacity: 1"
+    style="fill: none; stroke: #bf2121; stroke-width: 40; stroke-opacity: 1"
   />
   <rect width="24" height="258" x="276" y="171" style="fill: #ffffff" />
   <rect
@@ -21,6 +21,6 @@
     height="176"
     x="300"
     y="212"
-    style="fill: #ce1126; fill-opacity: 1"
+    style="fill: #bf2121; fill-opacity: 1"
   />
 </svg>

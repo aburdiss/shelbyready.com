@@ -74,8 +74,10 @@ header nav {
 }
 header nav a {
   display: inline-block;
-  padding: 0 10px;
-  line-height: 85px;
+  padding: 35px 10px;
+  height: 85px;
+  line-height: normal;
+  vertical-align: middle;
   text-decoration: none;
   transition: 0.2s;
   color: black;
@@ -92,6 +94,19 @@ footer {
 }
 footer a {
   color: white;
+  display: block;
+  text-decoration-color: transparent;
+  transition: all 0.2s;
+}
+footer a:hover,
+footer a:focus {
+  text-decoration-color: white;
+}
+footer h2 {
+  margin: 20px 0 0 0;
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 footer .inner-content {
   display: flex;
