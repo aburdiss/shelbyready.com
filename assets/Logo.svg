@@ -33,26 +33,16 @@
       fill: #ffffff;
     }
   </style>
-  <g id="Layer_1">
-    <g>
-      <text transform="matrix(1 0 0 1 15.3438 110.8799)" class="st0 st1 st2">
-        shelby
-      </text>
-    </g>
-    <g>
-      <text transform="matrix(1 0 0 1 350.8701 146.2715)" class="st0 st1 st2">
-        ready
-      </text>
-    </g>
-  </g>
-  <g id="Layer_5">
-    <circle class="st0" cx="305.49" cy="86.51" r="45.51" />
-    <polygon class="st4" points="305.58,43.58 269.28,110.13 341.7,110.13 	" />
-    <g>
-      <circle class="st5" cx="305.49" cy="87.98" r="19.75" />
-      <circle class="st6" cx="305.49" cy="87.98" r="14.95" />
-      <rect x="303.62" y="67.43" class="st6" width="3.2" height="40.31" />
-      <rect x="306.82" y="70.36" class="st5" width="4.8" height="34.7" />
-    </g>
-  </g>
+  <text transform="matrix(1 0 0 1 15.3438 110.8799)" class="st0 st1 st2">
+    shelby
+  </text>
+  <text transform="matrix(1 0 0 1 350.8701 146.2715)" class="st0 st1 st2">
+    ready
+  </text>
+  <circle class="st0" cx="305.49" cy="86.51" r="45.51" />
+  <polygon class="st4" points="305.58,43.58 269.28,110.13 341.7,110.13" />
+  <circle class="st5" cx="305.49" cy="87.98" r="19.75" />
+  <circle class="st6" cx="305.49" cy="87.98" r="14.95" />
+  <rect x="303.62" y="67.43" class="st6" width="3.2" height="40.31" />
+  <rect x="306.82" y="70.36" class="st5" width="4.8" height="34.7" />
 </svg>
