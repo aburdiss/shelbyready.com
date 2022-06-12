@@ -6,7 +6,10 @@
 # A very simple command that bundles all the JavaScript files into one
 # concatenated file.
 #
-version="1.1.0"
+# To ignore files from the bundle, include the flag `// bundle-ignore` in the
+# first line of the file.
+#
+version="1.2.0"
 projectName="shelby-ready"
 
 # Get the current path and ensure that the script is ran from the right place.
@@ -36,8 +39,7 @@ done < <(find . -name '*.js' -print0)
 # and the local JS is lowest.
 min=0
 max=$(( ${#filenames[@]} -1 ))
-while [[ min -lt max ]]
-do
+while [[ min -lt max ]]; do
     # Swap current first and last elements
     x="${filenames[$min]}"
     filenames[$min]="${filenames[$max]}"
@@ -52,21 +54,20 @@ bundlefile=bundle.js
 # Create or overwrite an existing JS bundle
 touch $bundlefile
 now=$(date)
-echo "// bundle.js created by bundlejs.sh v$version $now Copyright (c) Alexander Burdiss" > $bundlefile
+echo "// bundle.js created by bundlejs.sh v$version $now" > $bundlefile
 
 # Bundle the JS files together!
-for i in "${filenames[@]}"
-do
-    # Do not include bundle.js in the bundle
-    if [ "$i" != "./$bundlefile" ]; then
+for i in "${filenames[@]}"; do
+    firstLine=$(head -n 1 $i)
+    # Do not include bundle.js in the bundle, or intentionally ignored files
+    if [ "$i" != "./$bundlefile" ] && [ "$firstLine" != "// bundle-ignore" ]; then
         # Comment the filename to show in the bundled output
-        echo "//==============================" >> $bundlefile
         echo "// $i" >> $bundlefile
-        echo "//==============================" >> $bundlefile
         funcName=$(echo $i | sed 's/[^a-zA-Z0-9]//g')
-        echo "(function $funcName() {" >> $bundlefile
+        echo "(function $funcName() {" | tr -d '\n' >> $bundlefile
         # Append the file's contents to the bundle
-        cat $i >> $bundlefile
+        #      | Remove // lines| mult. spaces one| remove \n
+        cat $i | sed '/^\/\//d' | sed 's/  */ /g' | tr -d '\n' >> $bundlefile
         echo "})();" >> $bundlefile
     fi
 done
