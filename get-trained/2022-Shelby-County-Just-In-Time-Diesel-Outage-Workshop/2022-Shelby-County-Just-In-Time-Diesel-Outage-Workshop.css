@@ -85,8 +85,14 @@ body.Event-Sign-Up {
   margin-top: 0;
 }
 
+.Event-Sign-Up a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
 .Event-Sign-Up ul {
   list-style: none;
+  padding-left: 0;
 }
 .Event-Sign-Up .box li:before {
   content: "❏";

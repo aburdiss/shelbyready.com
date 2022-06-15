@@ -78,6 +78,7 @@
   margin: 20px;
   position: relative;
   border-top: 10px solid #214da6;
+  width: 100%;
 }
 @media screen and (min-width: 800px) {
   .card {

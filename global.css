@@ -246,6 +246,12 @@ header nav a:hover {
   padding-bottom: 3px;
 }
 
+/* Main Content */
+
+main.inner-content {
+  margin-bottom: 4rem;
+}
+
 /* Footer */
 
 footer {
@@ -258,6 +264,7 @@ footer a {
   display: block;
   text-decoration-color: transparent;
   transition: all 0.2s;
+  text-align: center;
 }
 footer a:hover,
 footer a:focus {
@@ -282,4 +289,11 @@ footer .inner-content {
 }
 footer .inner-content .left-container {
   width: 100%;
+  padding-bottom: 3rem;
+}
+@media screen and (min-width: 800px) {
+  footer .inner-content .left-container a {
+    padding-bottom: inherit;
+    text-align: left;
+  }
 }
