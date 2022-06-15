@@ -1,4 +1,4 @@
-// bundle.js created by bundlejs.sh v1.2.0 Tue Jun 14 20:42:16 EDT 2022
+// bundle.js created by bundlejs.sh v1.2.0 Tue Jun 14 20:43:34 EDT 2022
 // ./assets/js/header.js
 (function assetsjsheaderjs() {// Build hamburger navigation to replace static navigation (if JS enabled)
 const closeButton = document.createElement("button");
