@@ -1,3 +1,6 @@
+main#main-content {
+  margin-bottom: 4rem;
+}
 .body-container {
   display: flex;
   flex-direction: column;
