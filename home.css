@@ -48,7 +48,7 @@
   margin-top: 30px;
   position: relative;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 20rem) {
   .recent-updates {
     padding: 4rem 2rem 2rem 2rem;
   }

@@ -66,8 +66,10 @@ for i in "${filenames[@]}"; do
         funcName=$(echo $i | sed 's/[^a-zA-Z0-9]//g')
         echo "(function $funcName() {" | tr -d '\n' >> $bundlefile
         # Append the file's contents to the bundle
+        # TODO: Fix this so that correctly pulls out comments (need to strip // to EOL)
         #      | Remove // lines| mult. spaces one| remove \n
-        cat $i | sed '/^\/\//d' | sed 's/  */ /g' | tr -d '\n' >> $bundlefile
+        # cat $i | sed '/^\/\//d' | sed 's/  */ /g' | tr -d '\n' >> $bundlefile
+        cat $i >> $bundlefile
         echo "})();" >> $bundlefile
     fi
 done

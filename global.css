@@ -11,6 +11,10 @@ h2 {
   font-weight: normal;
 }
 
+hr {
+  border: 1px solid #214da6;
+}
+
 .visually-hidden-accessibility {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -54,6 +58,11 @@ h2 {
 .button:hover,
 .button:focus {
   background-color: #d72525;
+}
+
+.iframe-loading {
+  background: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100% 100%"><text fill="%23000000" x="50%" y="5%" font-family="\'Arial\', sans-serif" font-size="24" font-style="italic" text-anchor="middle">Loading...</text></svg>')
+    0px 0px no-repeat;
 }
 
 /* Header */
@@ -152,7 +161,7 @@ header nav a:hover {
 
 .hamburger {
   margin: 1rem;
-  width: 35px;
+  width: 40px;
   height: 30px;
   position: relative;
   top: 0;
@@ -173,9 +182,9 @@ header nav a:hover {
 }
 .hamburger .first-span {
   display: block;
-  height: 2px;
+  height: 4px;
   width: 100%;
-  background-color: white;
+  background-color: #214da6;
   transition-timing-function: ease;
   transition-duration: 0.5s;
   border-radius: 0px;
@@ -189,9 +198,9 @@ header nav a:hover {
 }
 .hamburger .second-span {
   display: block;
-  height: 2px;
+  height: 4px;
   width: 100%;
-  background-color: white;
+  background-color: #214da6;
   transition-timing-function: ease-out;
   transition-duration: 0.125s;
   border-radius: 0px;
@@ -206,9 +215,9 @@ header nav a:hover {
 }
 .hamburger .third-span {
   display: block;
-  height: 2px;
+  height: 4px;
   width: 100%;
-  background-color: white;
+  background-color: #214da6;
   transition-timing-function: ease;
   transition-duration: 0.5s;
   border-radius: 0px;
