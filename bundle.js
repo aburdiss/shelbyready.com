@@ -1,4 +1,4 @@
-// bundle.js created by bundlejs.sh v1.2.0 Tue Jun 14 23:24:01 EDT 2022
+// bundle.js created by bundlejs.sh v1.2.0 Tue Jun 14 23:27:36 EDT 2022
 // ./assets/js/footer.js
 (function assetsjsfooterjs() {// Populate footer with links
 const footer = document.querySelector("footer");
