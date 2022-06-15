@@ -1,6 +1,40 @@
-// bundle.js created by bundlejs.sh v1.2.0 Tue Jun 14 21:11:02 EDT 2022
+// bundle.js created by bundlejs.sh v1.2.0 Tue Jun 14 21:25:48 EDT 2022
+// ./assets/js/footer.js
+(function assetsjsfooterjs() {// Populate footer with links
+const footer = document.querySelector("footer");
+footer.innerHTML = `
+<div class="inner-content">
+  <div class="left-container">
+    <h2><a href="/get-involved/">Get Involved</a></h2>
+    <h2><a href="/get-informed/">Get Informed</a></h2>
+    <a href="/get-informed/guides/">How-To Guides</a>
+    <a href="/get-informed/recipes/">Recipes</a>
+    <h2><a href="/get-trained/">Get Trained</a></h2>
+    <h2><a href="/get-active/">Get Active</a></h2>
+    <a href="/get-active/memes/">Memes</a>
+    <h2><a href="/about/">About</a></h2>
+  </div>
+  <div>
+    <address>
+      <a href="mailto:info@shelbyready.com">info@shelbyready.com</a>
+    </address>
+    <a href="/privacy-policy/">Privacy Policy</a>
+  </div>
+</div>
+`;
+})();
 // ./assets/js/header.js
-(function assetsjsheaderjs() {// Build hamburger navigation to replace static navigation (if JS enabled)
+(function assetsjsheaderjs() {// Populate Header Data
+const headerNav = document.querySelector("header nav");
+headerNav.innerHTML = `
+<a href="/">Home</a>
+<a href="/get-involved/">Get Involved</a>
+<a href="/get-informed/">Get Informed</a>
+<a href="/get-trained/">Get Trained</a>
+<a href="/get-active/">Get Active</a>
+`;
+
+// Build hamburger navigation to replace static navigation (if JS enabled)
 const closeButton = document.createElement("button");
 closeButton.classList.add("hamburger");
 closeButton.innerHTML = `

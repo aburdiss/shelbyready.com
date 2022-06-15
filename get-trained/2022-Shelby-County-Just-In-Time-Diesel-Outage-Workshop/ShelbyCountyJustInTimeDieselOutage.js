@@ -1,5 +1,4 @@
 // bundle-ignore
-console.log("ran");
 const form = document.querySelector("#ShelbyCountyJustInTimeDieselOutageForm");
 
 function updateFormWidth() {

@@ -292,8 +292,10 @@ footer .inner-content .left-container {
   padding-bottom: 3rem;
 }
 @media screen and (min-width: 800px) {
-  footer .inner-content .left-container a {
+  footer .inner-content .left-container {
     padding-bottom: inherit;
+  }
+  footer .inner-content .left-container a {
     text-align: left;
   }
 }

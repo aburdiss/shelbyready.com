@@ -91,12 +91,7 @@ body.Event-Sign-Up {
 }
 
 .Event-Sign-Up ul {
-  list-style: none;
-  padding-left: 0;
-}
-.Event-Sign-Up .box li:before {
-  content: "❏";
-  margin: 0 1em;
+  list-style: square;
 }
 
 #register {
