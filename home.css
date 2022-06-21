@@ -44,6 +44,7 @@
 
 .recent-updates {
   border: 4px solid #bf2121;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.22);
   padding: 6rem 2rem 2rem 2rem;
   margin-top: 30px;
   position: relative;
@@ -113,6 +114,7 @@
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.22);
 }
 .contact form .right {
   margin-top: 50px;
