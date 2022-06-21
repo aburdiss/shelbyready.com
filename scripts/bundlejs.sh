@@ -1,5 +1,5 @@
 #!/bin/bash
-# alexander-burdiss/scripts/bundlejs.sh
+# shelby-ready/scripts/bundlejs.sh
 # Created by Alexander Burdiss 6/10/22
 # Copyright (c) Alexander Burdiss
 #
