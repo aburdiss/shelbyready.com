@@ -1,4 +1,4 @@
-// bundle.js created by bundlejs.sh v1.2.0 Wed Jun 22 23:11:15 EDT 2022
+// bundle.js created by bundlejs.sh v1.2.0 Wed Jun 22 23:39:01 EDT 2022
 // ./global.js
 (function globaljs() {// Add a JS class so the CSS can take into account the new JS styles.
 document.querySelector("body").classList.add("JS-Enabled");
@@ -150,6 +150,33 @@ window.addEventListener("resize", function (event) {
   }
 });
 headerContent.appendChild(closeButton);
+})();
+// ./assets/js/hideOldEvents.js
+(function assetsjshideOldEventsjs() {const events = document.querySelectorAll("[data-date]");
+const today = new Date();
+if (events && events.length) {
+  events.forEach((event) => {
+    const eventDate = new Date(event.dataset.date);
+    if (eventDate.getTime() < today.getTime()) {
+      event.remove();
+    }
+  });
+}
+
+// Add a message if all upcoming events are hidden
+const recentUpdates = document.querySelector(".recent-updates");
+let nonTextNodes = 0;
+recentUpdates.childNodes.forEach((node) => {
+  if (node.nodeType != Node.TEXT_NODE) {
+    nonTextNodes++;
+  }
+});
+if (nonTextNodes === 1) {
+  const div = document.createElement("div");
+  div.innerText =
+    "There are no upcoming events at this time. Please check back later!";
+  recentUpdates.appendChild(div);
+}
 })();
 // ./assets/js/breadcrumbs.js
 (function assetsjsbreadcrumbsjs() {const main = document.querySelector("main");
