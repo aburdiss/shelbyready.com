@@ -1,39 +1,34 @@
-main#main-content {
-  margin-bottom: 4rem;
-  margin-top: 2rem;
+main.inner-content {
+  margin-bottom: 20px;
 }
-.body-container {
+.buttons-container {
   display: flex;
-  flex-direction: column;
 }
-@media screen and (min-width: 800px) {
-  .body-container {
-    flex-direction: row;
-  }
-  .body-container main {
-    margin: 40px;
-  }
+.buttons-container .box {
+  background-color: #bf2121;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  flex: 1;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 30px;
+  transition: background-color 0.2s;
 }
-.body-container aside {
-  width: 250px;
-  padding: 20px;
-  background-color: #d9a918;
-}
-.body-container aside nav a {
-  display: block;
-  padding: 5px;
-}
-.body-container main {
-  width: 100%;
-}
-.body-container main h1 {
-  margin: 0;
+.buttons-container .box:hover,
+.buttons-container .box:focus {
+  background-color: #d72525;
 }
 
-.books-container {
+.bookshelf {
+  background: url(/assets/images/wood.svg);
+}
+.bookshelf .books-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  background-color: #dddddd;
 }
 
 .book {

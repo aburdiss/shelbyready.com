@@ -1,0 +1,49 @@
+[
+  {
+    "title": "The Holy Bible",
+    "subtitle": "(King James Version)",
+    "color": "#FFFFFF",
+    "author": "",
+    "files": {
+      "web": "https://gutenberg.org/ebooks/10",
+      "epub": "bible_kjv.epub",
+      "mobi": "bible_kjv.mobi"
+    }
+  },
+  {
+    "title": "The Declaration of Independence",
+    "author": "Thomas Jefferson",
+    "files": {
+      "web": "https://gutenberg.org/ebooks/1",
+      "epub": "declaration_of_independence.epub",
+      "mobi": "declaration_of_independence.mobi"
+    }
+  },
+  {
+    "title": "The Bill Of Rights",
+    "author": "",
+    "files": {
+      "web": "https://gutenberg.org/ebooks/2",
+      "epub": "bill_of_rights.epub",
+      "mobi": "bill_of_rights.mobi"
+    }
+  },
+  {
+    "title": "The U.S. Constitution",
+    "author": "",
+    "files": {
+      "web": "https://gutenberg.org/ebooks/5",
+      "epub": "constitution.epub",
+      "mobi": "constitution.mobi"
+    }
+  },
+  {
+    "title": "LDS Preparedness Manual",
+    "author": "",
+    "color": "#5b1712",
+    "files": {
+      "web": "https://www.ldsavow.com/preparedness-manual/",
+      "pdf": "lsd_preparedness.pdf"
+    }
+  }
+]

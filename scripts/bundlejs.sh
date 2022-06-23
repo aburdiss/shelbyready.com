@@ -37,17 +37,17 @@ done < <(find . -name '*.js' -print0)
 
 # Flip the read array so that the more global JS is always higher in the file
 # and the local JS is lowest.
-min=0
-max=$(( ${#filenames[@]} -1 ))
-while [[ min -lt max ]]; do
-    # Swap current first and last elements
-    x="${filenames[$min]}"
-    filenames[$min]="${filenames[$max]}"
-    filenames[$max]="$x"
+# min=0
+# max=$(( ${#filenames[@]} -1 ))
+# while [[ min -lt max ]]; do
+#     # Swap current first and last elements
+#     x="${filenames[$min]}"
+#     filenames[$min]="${filenames[$max]}"
+#     filenames[$max]="$x"
 
-    # Move closer
-    (( min++, max-- ))
-done
+#     # Move closer
+#     (( min++, max-- ))
+# done
 
 bundlefile=bundle.js
 

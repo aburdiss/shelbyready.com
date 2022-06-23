@@ -246,6 +246,26 @@ header nav a:hover {
   padding-bottom: 3px;
 }
 
+/* Breadcrumbs */
+
+.breadcrumbs {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background-color: white;
+}
+.breadcrumbs a {
+  position: relative;
+  padding-left: 18px;
+  display: inline-block;
+}
+.breadcrumbs a::before {
+  content: "< ";
+  position: absolute;
+  left: 4px;
+}
+
 /* Main Content */
 
 main.inner-content {
