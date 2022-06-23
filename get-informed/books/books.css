@@ -1,6 +1,11 @@
 main.inner-content {
   margin-bottom: 20px;
 }
+
+.emphasis {
+  color: #bf2121;
+}
+
 .buttons-container {
   display: flex;
 }
@@ -18,6 +23,11 @@ main.inner-content {
 .buttons-container .box:hover,
 .buttons-container .box:focus {
   background-color: #d72525;
+}
+.button-subtitle {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 10px;
 }
 
 .bookshelf {
