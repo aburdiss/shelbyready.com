@@ -1,4 +1,4 @@
-// bundle.js created by bundlejs.sh v1.2.0 Wed Jun 22 23:39:01 EDT 2022
+// bundle.js created by bundlejs.sh v1.2.0 Wed Jun 22 23:46:00 EDT 2022
 // ./global.js
 (function globaljs() {// Add a JS class so the CSS can take into account the new JS styles.
 document.querySelector("body").classList.add("JS-Enabled");
@@ -166,16 +166,18 @@ if (events && events.length) {
 // Add a message if all upcoming events are hidden
 const recentUpdates = document.querySelector(".recent-updates");
 let nonTextNodes = 0;
-recentUpdates.childNodes.forEach((node) => {
-  if (node.nodeType != Node.TEXT_NODE) {
-    nonTextNodes++;
+if (recentUpdates) {
+  recentUpdates.childNodes.forEach((node) => {
+    if (node.nodeType != Node.TEXT_NODE) {
+      nonTextNodes++;
+    }
+  });
+  if (nonTextNodes === 1) {
+    const div = document.createElement("div");
+    div.innerText =
+      "There are no upcoming events at this time. Please check back later!";
+    recentUpdates.appendChild(div);
   }
-});
-if (nonTextNodes === 1) {
-  const div = document.createElement("div");
-  div.innerText =
-    "There are no upcoming events at this time. Please check back later!";
-  recentUpdates.appendChild(div);
 }
 })();
 // ./assets/js/breadcrumbs.js
@@ -218,6 +220,7 @@ footer.innerHTML = `
   <div class="left-container">
     <h2><a href="/get-involved/">Get Involved</a></h2>
     <h2><a href="/get-informed/">Get Informed</a></h2>
+    <a href="/get-informed/books/">Books</a>
     <a href="/get-informed/guides/">How-To Guides</a>
     <a href="/get-informed/recipes/">Recipes</a>
     <h2><a href="/get-trained/">Get Trained</a></h2>
