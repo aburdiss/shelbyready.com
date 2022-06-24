@@ -9,7 +9,7 @@
 # To ignore files from the bundle, include the flag `// bundle-ignore` in the
 # first line of the file.
 #
-version="1.2.0"
+version="1.2.1"
 projectName="shelby-ready"
 
 # Get the current path and ensure that the script is ran from the right place.
@@ -35,20 +35,6 @@ while IFS=  read -r -d $'\0'; do
     filenames+=("$REPLY")
 done < <(find . -name '*.js' -print0)
 
-# Flip the read array so that the more global JS is always higher in the file
-# and the local JS is lowest.
-# min=0
-# max=$(( ${#filenames[@]} -1 ))
-# while [[ min -lt max ]]; do
-#     # Swap current first and last elements
-#     x="${filenames[$min]}"
-#     filenames[$min]="${filenames[$max]}"
-#     filenames[$max]="$x"
-
-#     # Move closer
-#     (( min++, max-- ))
-# done
-
 bundlefile=bundle.js
 
 # Create or overwrite an existing JS bundle
@@ -73,3 +59,5 @@ for i in "${filenames[@]}"; do
         echo "})();" >> $bundlefile
     fi
 done
+
+echo "JavaScript bundled"

@@ -8,6 +8,6 @@
 # 
 
 ./scripts/bundlejs.sh
-echo "bundlejs.sh" ran
+./scripts/generateSitemap.sh
 
 git add ./bundle.js
