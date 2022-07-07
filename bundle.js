@@ -1,4 +1,4 @@
-// bundle.js created by bundlejs.sh v1.2.1 Thu Jun 23 23:10:11 EDT 2022
+// bundle.js created by bundlejs.sh v1.2.1 Wed Jul  6 23:05:19 EDT 2022
 // ./global.js
 (function globaljs() {// Add a JS class so the CSS can take into account the new JS styles.
 document.querySelector("body").classList.add("JS-Enabled");
@@ -100,10 +100,10 @@ if (!noticeBannerExists) {
 const headerNav = document.querySelector("header nav");
 headerNav.innerHTML = `
 <a href="/">Home</a>
-<a href="/get-involved/">Get Involved</a>
 <a href="/get-informed/">Get Informed</a>
 <a href="/get-trained/">Get Trained</a>
 <a href="/get-active/">Get Active</a>
+<a href="/about/">About</a>
 `;
 
 // Build hamburger navigation to replace static navigation (if JS enabled)
@@ -218,7 +218,6 @@ const footer = document.querySelector("footer");
 footer.innerHTML = `
 <div class="inner-content">
   <div class="left-container">
-    <h2><a href="/get-involved/">Get Involved</a></h2>
     <h2><a href="/get-informed/">Get Informed</a></h2>
     <a href="/get-informed/books/">Books</a>
     <a href="/get-informed/guides/">How-To Guides</a>

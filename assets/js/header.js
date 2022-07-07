@@ -2,10 +2,10 @@
 const headerNav = document.querySelector("header nav");
 headerNav.innerHTML = `
 <a href="/">Home</a>
-<a href="/get-involved/">Get Involved</a>
 <a href="/get-informed/">Get Informed</a>
 <a href="/get-trained/">Get Trained</a>
 <a href="/get-active/">Get Active</a>
+<a href="/about/">About</a>
 `;
 
 // Build hamburger navigation to replace static navigation (if JS enabled)

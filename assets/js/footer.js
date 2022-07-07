@@ -3,7 +3,6 @@ const footer = document.querySelector("footer");
 footer.innerHTML = `
 <div class="inner-content">
   <div class="left-container">
-    <h2><a href="/get-involved/">Get Involved</a></h2>
     <h2><a href="/get-informed/">Get Informed</a></h2>
     <a href="/get-informed/books/">Books</a>
     <a href="/get-informed/guides/">How-To Guides</a>
