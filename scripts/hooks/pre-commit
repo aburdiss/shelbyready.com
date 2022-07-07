@@ -4,10 +4,12 @@
 # pre-commit git hook
 # 
 # Created by Alexander Burdiss 6/20/22
-# Version 1.0.0
+# Version 1.0.1
 # 
 
 ./scripts/bundlejs.sh
-./scripts/generateSitemap.sh
-
 git add ./bundle.js
+
+./scripts/generateSitemap.sh
+git add ./sitemap.xml
+
