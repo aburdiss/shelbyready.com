@@ -12,12 +12,32 @@
     <priority>1.00</priority>
   </url>
   <url>
+    <loc>https://shelbyready.com/get-active/community-events/</loc>
+    <lastmod>2022-07-07</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://shelbyready.com/get-active/small-group-resources/</loc>
+    <lastmod>2022-07-07</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://shelbyready.com/get-active/</loc>
     <lastmod>2022-07-07</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://shelbyready.com/get-active/memes/</loc>
+    <lastmod>2022-07-07</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://shelbyready.com/get-active/activism/</loc>
+    <lastmod>2022-07-07</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://shelbyready.com/get-active/churches/</loc>
     <lastmod>2022-07-07</lastmod>
     <priority>0.80</priority>
   </url>

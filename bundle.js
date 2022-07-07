@@ -1,4 +1,4 @@
-// bundle.js created by bundlejs.sh v1.2.1 Thu Jul  7 00:15:44 EDT 2022
+// bundle.js created by bundlejs.sh v1.2.1 Thu Jul  7 01:41:53 EDT 2022
 // ./global.js
 (function globaljs() {// Add a JS class so the CSS can take into account the new JS styles.
 document.querySelector("body").classList.add("JS-Enabled");
@@ -200,11 +200,9 @@ tempPathParts.pop();
 
 tempPathParts.map((pathPart) => {
   const humanReadable = pathPart.split("-").map(window.capitalize).join(" ");
-  console.log(pathPart, humanReadable);
   const breadcrumb = document.createElement("a");
   breadcrumb.innerText = humanReadable;
   breadcrumb.href = "/" + currentPath.split(pathPart)[0] + pathPart;
-  console.log(currentPath);
   breadcrumbs.appendChild(breadcrumb);
 });
 

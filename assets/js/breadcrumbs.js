@@ -17,11 +17,9 @@ tempPathParts.pop();
 
 tempPathParts.map((pathPart) => {
   const humanReadable = pathPart.split("-").map(window.capitalize).join(" ");
-  console.log(pathPart, humanReadable);
   const breadcrumb = document.createElement("a");
   breadcrumb.innerText = humanReadable;
   breadcrumb.href = "/" + currentPath.split(pathPart)[0] + pathPart;
-  console.log(currentPath);
   breadcrumbs.appendChild(breadcrumb);
 });
 
