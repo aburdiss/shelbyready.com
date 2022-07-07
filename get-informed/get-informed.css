@@ -87,3 +87,8 @@ main#main-content {
   scale: 1.05;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.22);
 }
+
+.resource {
+  margin-bottom: 20px;
+  display: inline-block;
+}
