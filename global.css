@@ -261,7 +261,7 @@ header nav a:hover {
   display: inline-block;
 }
 .breadcrumbs a::before {
-  content: "< ";
+  content: "> ";
   position: absolute;
   left: 4px;
 }

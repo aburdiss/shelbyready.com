@@ -3,9 +3,9 @@ main {
 }
 
 h1 {
-  background-image: url(../../assets/images/banners/recipes.jpg);
+  background-image: url(../../assets/images/banners/food-preservation.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 50% 20%;
   height: 250px;
   margin: 0;
   position: relative;

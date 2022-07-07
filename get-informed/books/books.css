@@ -1,5 +1,30 @@
+main {
+  position: relative;
+}
 main.inner-content {
   margin-bottom: 20px;
+}
+
+h1 {
+  background-image: url(../../assets/images/banners/books.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  margin: 0;
+  position: relative;
+}
+h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding-top: 100px;
+  font-style: normal;
 }
 
 .emphasis {
