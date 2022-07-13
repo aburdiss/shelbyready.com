@@ -1,4 +1,4 @@
-// bundle.js created by bundlejs.sh v1.2.1 Tue Jul 12 22:35:12 EDT 2022
+// bundle.js created by bundlejs.sh v1.2.1 Wed Jul 13 07:17:25 EDT 2022
 // ./global.js
 (function globaljs() {// Add a JS class so the CSS can take into account the new JS styles.
 document.querySelector("body").classList.add("JS-Enabled");
@@ -220,6 +220,7 @@ footer.innerHTML = `
   <a href="/get-informed/books/">Books</a>
   <a href="/get-informed/butchering/">Butchering</a>
   <a href="/get-informed/food-preservation">Food Preservation</a>
+  <a href="/get-informed/gardening/">Gardening</a>
   <a href="/get-informed/guides/">How-To Guides</a>
   <a href="/get-informed/recipes/">Recipes</a>
   <h2><a href="/get-trained/">Get Trained</a></h2>

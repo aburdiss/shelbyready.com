@@ -7,6 +7,7 @@ footer.innerHTML = `
   <a href="/get-informed/books/">Books</a>
   <a href="/get-informed/butchering/">Butchering</a>
   <a href="/get-informed/food-preservation">Food Preservation</a>
+  <a href="/get-informed/gardening/">Gardening</a>
   <a href="/get-informed/guides/">How-To Guides</a>
   <a href="/get-informed/recipes/">Recipes</a>
   <h2><a href="/get-trained/">Get Trained</a></h2>
