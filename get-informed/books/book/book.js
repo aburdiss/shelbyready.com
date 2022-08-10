@@ -23,6 +23,9 @@ fetch("/assets/books/catalog.json")
     document
       .querySelector('meta[name="twitter:title"]')
       .setAttribute("content", newTitle);
+    document
+      .querySelector('meta[property="og:url"]')
+      .setAttribute("content", window.location.href);
     document.title = newTitle;
     bookTitle.innerText = bookData.title;
     bookDescription.innerHTML = `
