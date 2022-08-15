@@ -34,7 +34,9 @@ fetch("/assets/memes/catalog.json")
       ${
         canPrint
           ? `
-      <a href="./meme-hanger?meme=${encodeURIComponent(element)}">
+      <a href="./meme-hanger?meme=${encodeURIComponent(
+        element
+      )}" target="_blank">
         <img class="print" src="/assets/images/print.svg" />
       </a>
       `
