@@ -1,0 +1,66 @@
+@page {
+  size: auto;
+  marign: 0mm;
+}
+
+@media print {
+  @page {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  body {
+    padding: 0;
+  }
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.meme-hanger-content {
+  flex: 1;
+  height: 710px;
+  padding-top: 10px;
+}
+.main-image {
+  width: 100%;
+  max-height: 710px;
+  object-fit: contain;
+}
+
+.always-available .logo-and-qr {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+.always-available .logo img {
+  width: 400px;
+}
+.always-available .qr-code img {
+  width: 150px;
+}
+
+.always-available .tear-strips {
+  display: flex;
+  height: 155px;
+  width: 100%;
+  overflow: hidden;
+}
+.always-available .tear-strips .strip {
+  writing-mode: vertical-rl;
+  flex: 1;
+  padding: 20px 20px;
+  border-top: 1px solid;
+  text-decoration: underline;
+}
+
+.always-available .tear-strips .strip:not(:first-of-type) {
+  border-left: 1px dashed;
+}
+.always-available .tear-strips .strip:not(:last-of-type) {
+  border-right: 1px dashed;
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<svg
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 724.18 806.76"
+>
+  <g id="layer1" transform="translate(1193.5 499.59)">
+    <g id="g11676" transform="matrix(0 -17.254 17.254 0 10443 -2252.9)">
+      <path
+        d="m-134.38 309.5c0 4.1683-3.3791 7.5474-7.5474 7.5474s-7.5474-3.3791-7.5474-7.5474 3.3791-7.5474 7.5474-7.5474 7.5474 3.3791 7.5474 7.5474z"
+        style="fill: #214da6"
+        transform="translate(1.1045 -949.48)"
+      />
+      <path
+        d="m-134.38 309.5c0 4.1683-3.3791 7.5474-7.5474 7.5474s-7.5474-3.3791-7.5474-7.5474 3.3791-7.5474 7.5474-7.5474 7.5474 3.3791 7.5474 7.5474z"
+        style="fill: #214da6"
+        transform="translate(32.767 -949.48)"
+      />
+      <path
+        d="m-134.38 309.5c0 4.1683-3.3791 7.5474-7.5474 7.5474s-7.5474-3.3791-7.5474-7.5474 3.3791-7.5474 7.5474-7.5474 7.5474 3.3791 7.5474 7.5474z"
+        style="fill: #214da6"
+        transform="translate(16.936 -976.35)"
+      />
+      <rect
+        style="fill: #214da6"
+        transform="rotate(-60.001)"
+        height="3"
+        width="27.692"
+        y="-443.73"
+        x="488.22"
+      />
+      <rect
+        style="fill: #214da6"
+        transform="matrix(-.5 -.86603 -.86603 .5 0 0)"
+        height="3"
+        width="27.692"
+        y="-226.9"
+        x="613.16"
+      />
+    </g>
+  </g>
+</svg>

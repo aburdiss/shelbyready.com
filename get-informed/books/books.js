@@ -26,5 +26,5 @@ ${book.author ? `<div class="author">${book.author}</div>` : ""}
   .catch((err) => {
     console.error(err);
     bookshelf.innerHTML =
-      '<div style="text-align: center;">There was an error fetching the books. Please try refreshing the page.</div>';
+      '<div style="text-align: center;">There was an error fetching the books. Please check your connection, and try refreshing the page. If this problem persists, contact us.</div>';
   });

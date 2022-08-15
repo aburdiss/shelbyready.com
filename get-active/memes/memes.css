@@ -3,31 +3,59 @@
   flex-wrap: wrap;
   margin: 0 -20px;
 }
-#memes-container a {
+#memes-container .meme {
   display: block;
   width: calc(100% - 40px);
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.22);
   margin: 20px;
   transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
 }
-#memes-container a:hover,
-#memes-container a:focus {
-  box-shadow: 2px 2px 8px #d9a918;
+
+#memes-container .icon-container {
+  height: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
+#memes-container .icon-container a {
+  display: block;
+}
+#memes-container .icon-container .download {
+  height: 40px;
+  width: 40px;
+}
+#memes-container .icon-container button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+#memes-container .icon-container .share {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+}
+#memes-container .icon-container .print {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+}
+
 @media screen and (min-width: 550px) {
-  #memes-container a {
+  #memes-container .meme {
     width: calc(50% - 40px);
   }
 }
 @media screen and (min-width: 800px) {
-  #memes-container a {
+  #memes-container .meme {
     width: calc((100% / 3) - 40px);
   }
 }
-#memes-container a img {
+#memes-container .meme img {
   width: 100%;
-  height: 100%;
   object-fit: contain;
+  flex: 1;
 }
 
 .send-memes {
