@@ -1,4 +1,4 @@
-// bundle.js created by bundlejs.sh v1.2.2 Sun Jul 17 14:18:51 EDT 2022
+// bundle.js created by bundlejs.sh v1.2.2 Wed Aug 17 22:42:41 EDT 2022
 // ./global.js
 (function globaljs() {// Add a JS class so the CSS can take into account the new JS styles.
 document.querySelector("body").classList.add("JS-Enabled");
@@ -151,35 +151,6 @@ window.addEventListener("resize", function (event) {
 });
 headerContent.appendChild(closeButton);
 })();
-// ./assets/js/hideOldEvents.js
-(function assetsjshideOldEventsjs() {const events = document.querySelectorAll("[data-date]");
-const today = new Date();
-if (events && events.length) {
-  events.forEach((event) => {
-    const eventDate = new Date(event.dataset.date);
-    if (eventDate.getTime() < today.getTime()) {
-      event.remove();
-    }
-  });
-}
-
-// Add a message if all upcoming events are hidden
-const recentUpdates = document.querySelector(".recent-updates");
-let nonTextNodes = 0;
-if (recentUpdates) {
-  recentUpdates.childNodes.forEach((node) => {
-    if (node.nodeType != Node.TEXT_NODE) {
-      nonTextNodes++;
-    }
-  });
-  if (nonTextNodes === 1) {
-    const div = document.createElement("div");
-    div.innerText =
-      "There are no upcoming events at this time. Please check back later!";
-    recentUpdates.appendChild(div);
-  }
-}
-})();
 // ./assets/js/breadcrumbs.js
 (function assetsjsbreadcrumbsjs() {const main = document.querySelector("main");
 const breadcrumbs = document.createElement("div");
@@ -229,7 +200,6 @@ footer.innerHTML = `
   <a href="/get-active/churches/">Churches</a>
   <a href="/get-active/community-events/">Community Events</a>
   <a href="/get-active/memes/">Memes</a>
-  <a href="/get-active/shop-local/">Shop Local</a>
   <a href="/get-active/small-group-resources/">Small Group Resources</a>
   <h2><a href="/about/">About</a></h2>
   </div>
