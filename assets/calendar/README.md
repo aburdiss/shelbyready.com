@@ -1,0 +1,3 @@
+Available Tags:
+gettrained
+getactive
