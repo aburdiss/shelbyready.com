@@ -1,4 +1,4 @@
-// bundle.js created by bundlejs.sh v1.2.2 Wed Aug 17 22:45:44 EDT 2022
+// bundle.js created by bundlejs.sh v1.2.2 Sun Sep  4 10:04:49 EDT 2022
 // ./global.js
 (function globaljs() {// Add a JS class so the CSS can take into account the new JS styles.
 document.querySelector("body").classList.add("JS-Enabled");
