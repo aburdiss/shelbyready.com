@@ -14,12 +14,15 @@ fetch("/assets/calendar/calendar.json")
       })
       .forEach((event) => {
         const eventDate = new Date(event.date);
-        if (!hasCurrentEventLoaded && eventDate.getTime() >= today.getTime()) {
+        if (
+          !hasCurrentEventLoaded &&
+          (eventDate.getTime() >= today.getTime() || event.date === "TBD")
+        ) {
           const newNode = document.createElement("div");
           newNode.innerHTML = `
         <h3>${event.name}</h3>
-        <div><em>${event.date}</em></div>
-        ${event.time ? `<div><em>${event.time}</em></div>` : ""}
+        <div>Date: <em>${event.date}</em></div>
+        ${event.time ? `<div>Time: <em>${event.time}</em></div>` : ""}
         ${event.location ? `<p>${event.location}</p>` : ""}
         ${event.description ? `<p>${event.description}</p>` : ""}
         ${
