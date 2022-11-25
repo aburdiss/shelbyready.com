@@ -246,7 +246,7 @@ header nav button:hover {
   align-items: center;
 }
 .chevron::after {
-  content: " ";
+  content: ' ';
   display: inline-block;
   margin-left: 0.5rem;
   border-left: 6px solid transparent;
@@ -317,7 +317,7 @@ header nav button:hover {
   display: inline-block;
 }
 .breadcrumbs a::before {
-  content: "> ";
+  content: '> ';
   position: absolute;
   left: 4px;
 }
@@ -379,6 +379,9 @@ footer h2 {
   font-style: normal;
   font-size: 1.2rem;
   font-weight: bold;
+}
+footer p {
+  text-align: center;
 }
 footer .inner-content {
   display: flex;
