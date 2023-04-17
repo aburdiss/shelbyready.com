@@ -23,8 +23,10 @@
 .organization a {
   position: absolute;
   bottom: 20px;
-  width: 260px;
+  max-width: 260px;
   text-align: center;
+  left: 20px;
+  right: 20px;
 }
 
 .build-section {

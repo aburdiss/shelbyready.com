@@ -37,7 +37,7 @@ body.Event-Sign-Up {
     border: 5px solid #bf2121;
     position: absolute;
     /*
-    100% (full width of the box) - 4rem (the padding around the strong, so it 
+    100% (full width of the box) - 4rem (the padding around the strong, so it
     matches the outside edge of the box)
     */
     width: calc(100% - 4rem);
@@ -45,7 +45,6 @@ body.Event-Sign-Up {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-200%);
-    z-index: 1;
   }
 }
 

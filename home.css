@@ -2,7 +2,7 @@
 
 .banner::before {
   background: linear-gradient(to bottom, #d9a918, transparent);
-  content: "";
+  content: '';
   left: 0;
   position: absolute;
   top: 85px;

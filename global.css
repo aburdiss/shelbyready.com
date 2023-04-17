@@ -322,38 +322,42 @@ header nav button:hover {
   left: 4px;
 }
 
-/* Recent Updates */
-
-.recent-updates {
-  border: 4px solid #bf2121;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.22);
-  padding: 6rem 2rem 2rem 2rem;
-  margin-top: 30px;
-  position: relative;
-}
-@media screen and (min-width: 20rem) {
-  .recent-updates {
-    padding: 4rem 2rem 2rem 2rem;
-  }
-}
-.recent-updates h2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: white;
-  background-color: #bf2121;
-  margin: 0;
-  font-style: normal;
-  padding: 0.4rem 2rem;
-}
-.recent-updates > div:not(:first-of-type) {
-  margin-top: 4rem;
-}
-
 /* Main Content */
 
 main.inner-content {
   margin-bottom: 4rem;
+}
+
+/* Responsive Google Calendar */
+
+.responsiveCal {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.responsiveCal iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.deskContent {
+  display: none;
+}
+.phoneContent {
+  display: block;
+}
+@media (min-width: 768px) {
+  .deskContent {
+    display: block;
+  }
+  .phoneContent {
+    display: none;
+  }
 }
 
 /* Footer */
