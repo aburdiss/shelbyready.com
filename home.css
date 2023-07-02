@@ -85,6 +85,10 @@
   color: white;
 }
 
+.featured-events-container a {
+  margin-bottom: 20px;
+}
+
 .contact form {
   background-color: #d9a918;
   padding: 40px;
