@@ -4,6 +4,10 @@
   line-height: 1.5;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 h1,
 h2 {
   color: #214da6;
